@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="CSS/stylepopup.css">
+</head>
+    <body>
+        <div class="form_popup">
+            <Form class="popup">
+                <h3 class="title_popup">Ваш фидбэк</h3>
+            
+                <span class="popup_question">Как часто вы заходите на сайт?</span>
+    
+                <select class="select_popup"> 
+                    <option class="option_popup" selected>Почти каждый день</option>
+                    <option class="option_popup">Раз в несколько дней</option>
+                    <option class="option_popup">Раз в несколько недель</option>
+                    <option class="option_popup">Несколько раз в год</option>
+                </select> 
+                
+                <span class="popup_question">Вы подписаны на e-mail рассылку?</span>
+                
+                <div class="radio_btn">
+                    <label class="radio_label">
+                        <input type="radio" name="radio_group"  class="radio_group">
+                        <span class="radio_group_span">Да</span> 
+                    </label>
+                    <label class="radio_label">
+                        <input type="radio" name="radio_group" class="radio_group">
+                        <span class="radio_group_span">Нет</span>
+                    </label>
+                </div>
+    
+                <span class="popup_question">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
+                
+                <textarea class="textarea_popup" placeholder="Может, больше рецептов?"></textarea>
+            
+                <button type="submit" class="btn_send">Отправить</button>
+    
+                <button type="submit" class="btn_close"></button> 
+            </Form> 
+        </div>
+    </body>
+</html>

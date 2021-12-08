@@ -1,0 +1,225 @@
+body {
+    background-color: darkgrey;
+}
+
+.form_popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.popup {
+    max-height: 590px;
+    height: 100%;
+    max-width: 390px;
+    display: block;
+    margin: auto;
+    top: 20vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    position: relative;
+    background-color: white;
+}
+
+.title_popup {
+    display: block;
+    margin-top: 0px;
+    font-family: open sans;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.title_popup::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    margin: 10px auto 0 auto;
+    background-color: #e1d9bd;
+}
+
+.popup_question {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-family: open sans;
+    font-size: 13px;
+}
+
+.popup_question:nth-child(n+2) {
+    margin-top: 25px;
+}
+
+.select_popup {
+    background-color: #f4f7f6;
+    width: 100%;
+    max-width: 329px;
+    height: 48px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 14px 20px 14px 15px;
+    background-image: url("../svg/form-arrows.svg");
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    font-family: open sans;
+    font-size: 13px;
+}
+
+.select_popup:focus {
+    outline: none;
+    border-bottom: 1px #b59f5b;
+}
+
+.option_popup {
+    font-family: open sans;
+    font-size: 13px;
+}
+
+.btn_close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -30px;
+    right: -5px;
+    background: none;
+    border: none;
+}
+
+.btn_close::before {
+    content: "";
+    display: block;
+    background-image: url("../svg/form-x.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 100%;
+}
+
+.radio_group_span {
+    color: black;
+    font-family: open sans;
+    font-size: 13px;
+    margin-right: 12px;
+}
+
+.radio_group_span::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../svg/form-empty-circle.svg");
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+.radio_group:checked~.radio_group_span::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+.radio_group {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.textarea_popup {
+    background-color: #f4f7f6;
+    border: none;
+    width: 100%;
+    max-width: 329px;
+    height: 130px;
+    outline: none;
+    font-family: open sans;
+    font-size: 13px;
+    resize: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.textarea_popup:focus {
+    outline: solid 1px #b59f5b;
+}
+
+.btn_send {
+    width: 100%;
+    max-width: 329px;
+    min-height: 48px;
+    background-color: #b59f5b;
+    font-family: open sans;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width : 1199px) {
+
+    .radio_group_span::before {
+        background-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn_close {
+        top: -35px;
+        right: 10px;
+    }
+
+    .btn_close::before {
+        width: 35px;
+        height: 100%;
+    }
+
+}
+
+@media (min-width:360px) and (max-width:767px) {
+
+    .popup {
+        width: 329px;
+        padding: 28px 28px;
+    }
+
+    .title_popup {
+        font-size: 16px;
+    }
+
+    .radio_group_span {
+        margin-right: 20px;
+    }
+
+    .radio_group_span::before {
+        background-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn_close {
+        top: -35px;
+        right: 10px;
+    }
+
+    .btn_close::before {
+        width: 35px;
+        height: 100%;
+    }
+}
