@@ -741,71 +741,8 @@ li {
   display: none;
 }
 
-@media (min-width: 769px) and (max-width:1200px)
-{
-  .burger_btn {
-    display: none;
-  }
 
-  .container-logo-title {
-    display: none;
-  }
-
-  .container_prewew {
-    width: auto;
-    flex-wrap: wrap;
-  }
-
-  .news_trend {
-    width: calc(50% - 2px);
-    margin-bottom: 4px;
-  }
-
-  .news_trend:nth-child(even) {
-    margin-left: 4px;
-  }
-
-  .news_trend:nth-child(odd) {
-    margin-left: 0;
-  }
-
-  .news_shop {
-    width: calc(50% - 45px);
-    
-  }
-
-  .news_shop:nth-child(n + 2) {
-    margin-left: 35px;
-  }
-
-
-  .content {
-    flex-direction: column;
-  }
-  
-  .header-div {
-    margin: 40px 0 0 0;
-    border-bottom: solid 3px #eeeeee;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-
-  .main {
-    margin-left: 35px;
-    flex-grow: 1;
-  }
-  
-  .aside {
-    flex-grow: 0;
-  }
-
-  .content-body {
-    width: auto;
-  }
- 
-}
-
-@media (min-width: 361px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
   .header {
     background-image: url("../images/banner-bg-tablet.jpg");
@@ -927,7 +864,7 @@ li {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
 
   .news_trend {
     width: 100%;
@@ -1068,7 +1005,9 @@ li {
   }
 }
 
-/*                       Стили для popup                                      */
+
+
+
 
 .form_popup {
   display: flex;
@@ -1244,7 +1183,7 @@ li {
   text-transform: uppercase;
 }
 
-@media (min-width: 361px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .radio_group_span::before {
       background-size: 25px;
@@ -1264,7 +1203,7 @@ li {
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 767px) {
 
   .popup {
       width: 329px;
